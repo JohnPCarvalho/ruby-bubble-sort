@@ -1,14 +1,14 @@
 def bubble_sort list
     unsorted = true
     while unsorted do
-        i = 0
+        iterator = 0
         unsorted = false
-        while i < (list.length - 1)
-            if list[i] > list[i + 1]
-                list[i], list[i + 1] = list[i + 1], list[i]
+        while iterator < (list.length - 1)
+            if list[iterator] > list[iterator + 1]
+                list[iterator], list[iterator + 1] = list[iterator + 1], list[iterator]
                 unsorted = true
             end
-            i += 1
+            iterator += 1
         end
     end
     print list
